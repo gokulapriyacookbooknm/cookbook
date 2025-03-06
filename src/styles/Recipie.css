@@ -1,0 +1,137 @@
+/* Premium Background */
+.Recipie-page {
+    padding-top: 12vh;
+    min-height: 70vh;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+/* Recipe Image Styling */
+.recipie-img {
+    width: 100%;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.recipie-img img {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    border-radius: 1rem;
+    box-shadow: 0px 12px 35px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.recipie-img img:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 15px 40px rgba(255, 255, 255, 0.3);
+}
+
+/* Recipe Data Layout */
+.recipie-data-container {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 5%;
+    justify-content: center;
+    margin-top: -12vh;
+}
+
+/* Recipe & Ingredients Box */
+.recipie-data,
+.ingredients-container {
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 4vh 3vw;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.recipie-data:hover,
+.ingredients-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 40px rgba(255, 255, 255, 0.25);
+}
+
+/* Recipe Header */
+.recipie-header h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+.recipie-header .recipie-specials {
+    display: flex;
+    gap: 12px;
+}
+
+.recipie-header .recipie-specials p {
+    border: 1px solid #00e676;
+    color: #00e676;
+    background: rgba(0, 230, 118, 0.2);
+    padding: 6px 18px;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Text Styling */
+.procedure h5,
+.youtube-video-container h5,
+.ingredients-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00e676;
+    margin-bottom: 10px;
+}
+
+.procedure p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Ingredients Section */
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ingredient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.ingredient:last-child {
+    border-bottom: none;
+}
+
+.ingredient h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f8f9fa;
+}
+
+.ingredient p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #b0bec5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .recipie-data-container {
+        grid-template-columns: 1fr;
+    }
+
+    .recipie-img img {
+        height: auto;
+        max-height: 50vh;
+    }
+}
